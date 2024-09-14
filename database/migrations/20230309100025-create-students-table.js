@@ -22,14 +22,10 @@ module.exports = {
         allowNull: true,
         unique: true,
       },
-      username: {
-        type: Sequelize.STRING,
-        allowNull: true,
-        unique: true,
-      },
-      gender: {
-        type: Sequelize.ENUM("Boy", "Girl"),
-        allowNull: true,
+      archived: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
       },
       createdAt: {
         allowNull: false,

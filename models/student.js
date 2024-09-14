@@ -24,39 +24,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
         unique: true,
       },
-      username: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        unique: true,
-      },
-      gender: {
-        type: DataTypes.ENUM("Boy", "Girl"),
-        allowNull: true,
-      },
-      profile_pic: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      coins: {
-        type: DataTypes.INTEGER,
-        defaultValue: 0,
-      },
-      last_poll: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-      },
-      fk_institute_id: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-      },
-      fk_grade_id: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-      },
-      fcm_token: {
-        type: DataTypes.TEXT,
-        allowNull: true,
-      },
       archived: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
